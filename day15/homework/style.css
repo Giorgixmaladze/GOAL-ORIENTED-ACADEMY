@@ -1,0 +1,151 @@
+.container0{
+ background-image: linear-gradient(to left,black,green);
+    height: 160px;
+    position: absolute;
+    width: 1440px;
+    top: 0;
+    left: 0;
+}
+
+
+h1{
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: 50px;
+   font-family: "Lato",sans-serif;
+   font-weight: 700;
+
+}
+
+h2{
+    padding-left: 1000px;
+    position: relative;
+    bottom: 70px;
+    color: green;
+}
+h4{
+    position: absolute;
+    top: 80px;
+    font-size: 20px;
+    left: 800px;
+    color: white;
+}
+
+.sign_up{position: absolute;
+    background-color: black;
+    top: 95px;
+    left: 1020px;
+    cursor: pointer;
+}
+.sign_up:hover{
+    background-color: green;
+    transition: 0.5s;
+    cursor: pointer;
+}    
+
+.login{
+    padding-top: 200px;
+    padding-left: 500px;
+}
+.container1{
+background-color: black;
+position: absolute;
+    width: 1440px;
+    top: 160px;
+    left: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 700px;
+    background-image: url(download.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+
+.container2{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    bottom: 106px;
+    left: 500px;
+    border-style:groove;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom,green,black);
+
+}
+h3{
+    font-family: sans-serif;
+    color: white;
+    position: absolute;
+    left: 115px;
+    font-size: 30px;
+
+}
+.mail{
+    position: absolute;
+    top: 135px;
+    left: 45px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    font: message-box;
+    border-style: hidden;
+}
+
+.password{
+    position: absolute;
+    top: 220px;
+    left: 45px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    font: message-box;
+    border-style: hidden;
+}
+
+button{
+    position: absolute;
+    top: 320px;
+    left: 70px;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-style: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: green;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer{
+    width: 1440px;
+    height: 250px;
+    background-color:black;
+    position: absolute;
+    top: 700px;
+}
+
+.about-goa{
+    position: absolute;
+    top: 40px;
+}
+
+p{
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    top: 40px;
+    left: 520px;
+}
+

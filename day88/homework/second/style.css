@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(208, 209, 209);
+}
+
+
+#parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+    gap: 10%;
+}
+
+
+button{
+    width: 15%;
+    height: 10%;
+    background-color: rgb(59, 59, 59);
+    border: none;
+    color: white;
+    font-size: large;
+    transition: 0.25s;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(110%);
+}

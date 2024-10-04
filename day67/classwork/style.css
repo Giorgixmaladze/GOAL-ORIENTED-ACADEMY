@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+div{
+    width: 300px;
+    height: 200px;
+    background-color: greenyellow;
+    transition: 0.25s ease-in-out;
+    transform: translate(100px,100px);
+}
+
+
+div:hover{
+    transform: scale(110%) translate(0px,100px) ;
+    width: 100%;
+  
+    
+}

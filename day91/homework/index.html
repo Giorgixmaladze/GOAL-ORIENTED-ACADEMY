@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="parent"> 
+            <section id="inputs">
+                <form id="myform">
+                    <div class="input">
+                        <label for="day">DAY</label>
+                        <input type="text" id="day" name="day" placeholder="DD">
+                        <p class="error"></p>
+                    </div>
+                    <div class="input">
+                        <label for="month" >MONTH</label>
+                        <input  type="text" id="month" name="month" placeholder="MM">
+                        <p class="error"></p>
+                    </div>
+                    <div class="input">
+                        <label for="year" >YEAR</label>
+                        <input type="text" id="year" name="year" placeholder="YYYY">
+                        <p class="error"></p>
+                    </div>
+                </form>
+            </section>
+            <section id="section2">
+                <hr>
+                <button id="submit">
+                    <img src="./icon-arrow.svg" alt="">
+                </button>
+            </section>
+            <section id="section3">
+                <div class="data">
+                    <h2 class="number"></h2>
+                    <h2 class="date">years</h2>
+                </div>
+                <div class="data">
+                    <h2 class="number"></h2>
+                    <h2 class="date">months</h2>
+                </div>
+                <div class="data">
+                    <h2 class="number"></h2>
+                    <h2 class="date">days</h2>
+                </div>
+            </section>
+
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

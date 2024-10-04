@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+body{
+    background-color: rgb(187 189 208);
+    
+}
+
+
+header{
+    background-color: rgb(114 210 173);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 205px;
+
+}
+
+h1{
+    font-family: "Playwrite DE Grund", cursive;
+    
+    font-weight: 500;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sports{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(89 208 132);
+    transition: 0.5s;
+    cursor: pointer;
+    border-style: none;
+}
+
+.sports:hover{
+    background-color: rgb(83, 134, 166);
+}
+
+
+
+a{
+    color: black;
+    font-family: "Playwrite DE Grund", cursive;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+main{
+    margin-top: 200px;
+
+}
+
+.sport{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+}
+
+
+div{
+    width: 70%;
+    height: 200px;
+    background-color: rgb(87,87, 87)
+}
+
+p{
+    color: white;
+    line-height: 20px;
+}
+
+
+
+.sport2{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+
+
+
+

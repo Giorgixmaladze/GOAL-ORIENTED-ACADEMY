@@ -1,0 +1,290 @@
+body{
+    background-color: #8C9E9C;
+}
+
+
+header{
+    width: 100%;
+    height: 200px;
+}
+
+.header{
+    width: 100%;
+    background-color: black;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.heading{
+     color: white;
+     font-family: sans-serif;
+     text-align: center;
+     padding-top: 20px;
+}
+
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ww1{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+
+a{
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+.ww1:hover{
+background-color: #660D0D;
+cursor: pointer;
+}
+
+
+.main-page{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    transition: 0.5s;
+}
+
+
+
+
+.main-page:hover{
+    background-color: #660D0D;
+    cursor: pointer;
+    }
+
+
+.vietnam{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    transition: 0.5s; 
+}
+
+
+
+.vietnam:hover{
+    background-color: #660D0D;
+    cursor: pointer
+}
+
+
+
+.kw{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    transition: 0.5s
+}
+
+
+
+
+.kw:hover{
+    background-color: #660D0D;
+    cursor: pointer
+}
+
+
+h2{
+    font-size: 45px;
+    font-family: sans-serif;
+    margin-left: 100px;
+}
+
+.information1{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.german-soldiers{
+    width: 300px;
+    height: 185px;
+    margin-top: 65px;
+
+
+}
+.info1{
+    background-color: black;
+    width: 100%;
+    height: 290px;
+    margin-left: 50px;
+
+}
+
+
+.about1{
+    color: white;
+    line-height: 30px;
+}
+.information2{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+}
+
+
+
+.soviet-soldiers{
+    width: 300px;
+    height: 200px;
+    margin-top: 85pxx;
+}
+
+
+.info2{
+    width: 100%;
+    background-color: black;
+    margin-right: 50px;
+    height: 390px;
+}
+
+
+.about2{
+    color: white;
+    line-height: 28px;
+}
+
+.information3{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+}
+
+
+.germans{
+    width: 300px;
+    height: 200px;
+    margin-top: 65px;
+}
+
+
+.info3{
+    width: 100%;
+    background-color: black;
+    margin-left: 50px;
+    height: 380px;
+}
+
+
+.about3{
+    color: white;
+}
+
+
+.information4{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.air-force{
+    width: 300px;
+    height: 200px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+.info4{
+     width: 100%;
+    background-color: black;
+    margin-right: 50px;
+    height: 200px
+}
+
+
+.about4{
+    color: white;
+
+}
+
+
+
+footer{
+    
+    background-color: black;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.wiki{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    margin-left: 375px;
+    margin-top: 60px;
+    transition: 0.5s;
+}
+
+
+.wiki:hover{
+    background-color: #660D0D;
+    cursor: pointer;
+}
+
+
+.britanica{
+
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    margin-left: 375px;
+    margin-top: 60px;
+    transition: 0.5s;
+}
+
+.britanica:hover{
+    background-color: #660D0D;
+    cursor: pointer;
+}
+
+
+
+

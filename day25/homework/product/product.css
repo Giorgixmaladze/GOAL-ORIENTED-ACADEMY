@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    border-bottom-left-radius: 10px;
+    background-color: #1D6D18;
+    width: 1360px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom-right-radius: 10px;
+    height: 190px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 530px;
+}
+.main{
+    width: 150px;
+    height: 60px;
+    background: inherit;
+    margin-left: 330px;
+    border-style: hidden;  
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+.main, a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+  
+    
+  
+  .main:hover {
+    color:black;
+    box-shadow: inset 200px 0 0 0 black;
+    
+}
+
+.adverdisment{
+    width: 150px;
+    height: 60px;
+    background: inherit;
+    margin-left: 330px;
+    border-style: hidden;  
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+.adverdisment, a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+  
+    
+  
+  .adverdisment:hover {
+    color:black;
+    box-shadow: inset 200px 0 0 0 black;
+    
+}
+
+.sec1{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 1360px;
+    height: 70px;
+    margin-top: 182px;
+    position: absolute;
+    left: 0px;
+    height: 560px;
+}
+
+
+.camera{
+    background-color: #626471;
+    width: 370px;
+    height: 440px;
+    margin-top: 60px;
+    margin-left: 75px;
+    border-radius: 10px;
+    
+}
+
+
+
+#camera{
+    width: 370px;
+    height: 290px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.camera,h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    color: white;
+    margin-left: 75px;
+}
+
+.cart1{
+    width: 370px;
+    height: 58px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: hidden;
+    background-color: black ;
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+
+.cart1:hover{
+    background-color: #1D6D18;
+    cursor: pointer;
+}
+
+.lens{
+    background-color: #626471;
+    width: 370px;
+    height: 440px;
+    margin-top: 60px;
+    margin-left: 75px;
+    border-radius: 10px;
+    
+}
+
+.camera_lens{
+    width: 370px;
+    height: 295px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+#lens{
+    padding-left: 25px;
+}
+
+.cart2{
+    width: 370px;
+    height: 58px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: hidden;
+    background-color: black ;
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+
+.cart2:hover{
+    background-color: #1D6D18;
+    cursor: pointer;
+}
+
+.accessories{
+    background-color: #626471;
+    width: 370px;
+    height: 440px;
+    margin-top: 60px;
+    margin-left: 75px;
+    border-radius: 10px;
+}
+
+.camera_accessories{
+    width: 370px;
+    height: 295px;
+    border-radius: 10px;
+}
+
+.other_camera_accessories{
+    
+        width: 370px;
+        height: 142px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-style: hidden;
+        background-color: black ;
+        font-size: 25px;
+        color: white;
+        font-family: sans-serif;
+        transition: 0.5s;
+    }
+    
+    
+    .other_camera_accessories:hover{
+        background-color: #1D6D18;
+        cursor: pointer;
+    }
+
+
+
+

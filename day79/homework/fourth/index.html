@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- Dropdown Selection and Display
+Objective: Create a form with a dropdown menu (select element) that has options 
+like "Red," "Blue," and "Green." When the user selects an option, display the
+ selected color in a <div> below the form.
+
+Steps:
+Create an HTML form with a select element containing color options.
+Add a <div> below the form to display the selected color.
+Attach a change event listener to the select element.
+In the event handler, update the text of the <div> to show the selected color. -->
+    <div id="parent">
+        <label for="colors">select the color</label>
+        <select name="colors" id="colors">
+            <option value="red">Red</option>
+            <option value="Green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+        <div id="block">
+            <p id="p1"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

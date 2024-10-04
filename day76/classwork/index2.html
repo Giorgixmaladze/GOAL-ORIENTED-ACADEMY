@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="par">iodhsagaf</p>
+    <script>
+        //  წამოვიღეთ დოკუმენტის ობიექტი რომელშიც განთავსებულია html ყველა ელემენტი და ფაილი,შემდეგ documentში მდებარე შვილი ელემენტი body ავირჩიეთ ,ხოლო შემდეგ body ელემენტში მდებარე შვილის childrenის მე0 ინდექსზე მყოფი ელემენტი ამ შემთხვევაში p  წამოვიღეთ
+        const p = document.getElementById("par")
+        // შემდეგ შევცვალეთ ტექსტი მოცემული pის შვილი ელემენტის გამოძახებით 
+        p.style.color ="red"
+        // ბოლოს კი დავბეჭდეთ კონსოლში შეცვლილი ტექსტი
+        console.dir(p)
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+
+
+.kor{
+    background-image: url(./images.jpg);
+    
+    
+
+}
+
+.color{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.korea{
+    background-color: rgba(166, 168, 255, 0.6);
+}
+
+
+.korea:hover{
+    width: 390px;
+    height: 280px;
+}
+
+.country{
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 260px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.country:hover{
+    width: 390px;
+    height: 280px;
+    
+}
+
+h1{
+    margin-bottom: 0;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+    padding-top: 45px;
+    text-shadow: 5px 5px 20px black;
+}
+
+
+p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-shadow: 10px 10px 20px black;
+}
+
+
+.geo{
+    background-image: url(./images\ \(1\).jpg);
+}
+
+
+.georgia{
+    background-color: rgba(252, 222, 139, 0.6);
+}
+
+
+
+.usa{
+    background-image: url(./nyk.png);
+}
+
+.nyk{
+    background-color: rgba(245, 186, 175, 0.6);
+}
+
+
+
+.fra{
+    background-image: url(./download.jpg);
+}
+
+
+.paris{
+    background-color: rgba(245, 234, 167, 0.6);
+}
+
+
+.jap{
+    background-image: url(./download\ \(1\).jpg);
+}
+
+
+.japan{
+    background-color: rgba(148, 209, 252, 0.6);
+}
+
+
+.arabs{
+    background-image: url(./download\ \(2\).jpg)
+}
+
+
+.dubai{
+    background-color: rgba(245, 238, 131, 0.6);
+}

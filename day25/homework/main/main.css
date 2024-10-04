@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.header{
+   
+    background-color: #1D6D18;
+    width: 1360px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    height: 190px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 470px;
+}
+.product{
+    width: 150px;
+    height: 60px;
+    background: inherit;
+    margin-left: 330px;
+    border-style: hidden;  
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+.product , a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+  
+    
+  
+  .product:hover {
+    color:black;
+    box-shadow: inset 200px 0 0 0 black;
+    
+  }
+
+  .adverdisment{
+    width: 150px;
+    height: 60px;
+    background: inherit;
+    margin-left: 330px;
+    border-style: hidden;  
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .adverdisment:hover{
+    color:black;
+    box-shadow: inset 200px 0 0 0 black;
+  }
+
+
+
+.main{
+    background-color: black;
+    width: 1360px;
+    margin-top: 182px;
+    position: absolute;
+    left: 0;
+    height: 441px;
+}
+.about{
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    padding-left: 145px;
+    padding-top: 60px;
+}
+img{
+    width: 398px;
+    margin-left: 671px;
+    position: absolute;
+    top: 80px;
+}
+p{
+    color: white;
+    font-family: sans-serif;
+    line-height: 25px;
+    position: absolute;
+    top: 150px;
+    left: 70px;
+}

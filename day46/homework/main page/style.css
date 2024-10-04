@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #EED20B;
+    width: 1360px;
+    height: 275px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1{
+    font-size: 80px;
+    font-family: sans-serif;
+    margin-left: 550px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.movie1{
+    width: 335px;
+    height: 410px;
+    margin-top: 380px;
+    background-color: #5B524F;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.godfather{
+    width: 334px;
+    margin-left: 0px;
+    height: 330px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.nav1{
+    width: 335px;
+    height: 80px;
+    margin-top: -4px;
+    background-color: black;
+    border-style: hidden;
+    transition: 0.5s;
+}
+
+
+.information1{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: sans-serif
+}
+
+
+.nav1:hover{
+background-color: #EAB206 ;
+cursor: pointer;
+}
+
+.movie2{
+    background-color: gray;
+    height: 410px;
+    width: 335px;
+    margin-top: 380px;
+    margin-left: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.scarface{
+    width: 334px;
+    height: 330px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.nav2{
+    width: 334px;
+    height: 78px;
+    margin-top: -3px;
+    background-color: gray;
+    border-style: hidden;
+    transition: 0.5s;
+}
+.information2{
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+    width: 334px;
+    height: 75px;
+}
+
+
+
+.nav2:hover{
+   background-color: #F35320 ; 
+   cursor:pointer
+}
+
+.information2:hover{
+    color: black;
+}
+
+
+.movie3{
+    background-color: navy;
+    width: 335px;
+    height: 410px;
+    margin-left: 160px;
+    margin-top: 380px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.snowfall{
+    width: 335px;
+    height: 330px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;}
+
+.nav3{
+    width: 335px;
+    height: 80px;
+    margin-top: -4px;
+    background-color: navy;
+    border-style: hidden;
+    transition: 0.5s;
+}
+
+.information3{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+.nav3:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+
+
+

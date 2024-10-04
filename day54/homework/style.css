@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(213, 237, 235);
+}
+
+
+div{
+    
+    background-color: white;
+    width: 85%;
+    height: 600px;
+    border-radius: 15px;
+    margin: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+
+h2{
+    
+    padding-top: 25%;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(111, 113, 113);
+
+}
+
+
+#signin{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    text-align: center;
+}
+
+.input{
+    border-radius: 10px;
+    width: 80%;
+    height: 45px;
+    border-style: none;
+    background-color: rgb(229, 233, 233);
+}
+
+
+
+a{
+    padding-left: 45%;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: blue;
+}
+
+
+button{
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+#signup{
+    padding-left: 0px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: blue;
+}

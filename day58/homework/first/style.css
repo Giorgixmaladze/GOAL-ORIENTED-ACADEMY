@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+    height: 100vh;
+}
+
+
+
+#sidebar{
+    grid-row: 1 / 5;
+    background-color: rgb(161, 160, 163);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+#h1{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+h1{
+    font-size: 25px;
+    color: rgb(28, 38, 39);
+    font-family: sans-serif;
+}
+
+.side{
+    gap: 10px;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    transition: 0.25s;
+    cursor: pointer;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+
+.side:hover{
+    background-color: aliceblue;
+    width: 100%;
+}
+
+p{
+    font-family: sans-serif;
+}
+span{
+    font-size: 50px;
+    
+}
+
+
+#header{
+    grid-column: 2 / 4;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#content{
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+    background-color: rgba(48, 48, 48, 1);
+    display: flex;
+    align-items: center
+}
+
+#footer{
+    grid-row: 4 / 6;
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(78, 76, 77, 0.8);
+}
+
+
+h2{
+    font-family: "Anton SC", sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+
+#header2{
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+}
+
+#login{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   
+
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+
+input{
+    border: none;
+    width: 170px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(37 37 37);
+    outline: none;
+}
+
+
+button{
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+button:hover{
+    width: 160px;
+    height: 40px;
+    background-color: aliceblue;
+    color: black;
+}
+
+#keyboards{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.keyboard{
+    border-radius: 5px;
+    background-color: black;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+
+img{
+    width: 100%;
+}
+
+.keyboard p{
+    color: white;
+}
+
+#footer span{
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+span:hover{
+    transform: scale(110%)
+}
+

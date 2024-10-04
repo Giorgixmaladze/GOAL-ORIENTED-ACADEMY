@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(228, 238, 236);
+}
+
+
+section{
+    background-image: url(/images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 320px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 25px rgb(135, 134, 129);
+    margin: auto;
+    margin-top: 10%;
+   overflow: hidden;
+}
+
+div{
+    background-color:rgba(242, 242, 186, 0.5);
+    height: 320px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 20px;
+    text-shadow: 2px 4px 3px rgb(0, 0, 0);
+
+
+    
+}
+
+h1{
+    
+    font-size: 70px;
+    color: white;
+    padding-top: 15%;
+    margin-top: 0px;
+    
+}
+p{
+    color: white;
+    font-size: 30px;
+   
+}

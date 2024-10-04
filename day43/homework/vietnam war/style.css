@@ -1,0 +1,264 @@
+body{
+    background-color: #8C9E9C;
+}
+
+
+header{
+    width: 100%;
+    height: 200px;
+}
+
+.header{
+    width: 100%;
+    background-color: black;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.heading{
+     color: white;
+     font-family: sans-serif;
+     text-align: center;
+     padding-top: 20px;
+}
+
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ww1{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+
+a{
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+.ww1:hover{
+background-color: #660D0D;
+cursor: pointer;
+}
+
+
+.ww2{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    transition: 0.5s;
+}
+
+
+
+
+.ww2:hover{
+    background-color: #660D0D;
+    cursor: pointer;
+    }
+
+
+.main-page{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    transition: 0.5s; 
+}
+
+
+
+.main-page:hover{
+    background-color: #660D0D;
+    cursor: pointer
+}
+
+
+
+.kw{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    transition: 0.5s
+}
+
+
+
+
+.kw:hover{
+    background-color: #660D0D;
+    cursor: pointer
+}
+
+
+
+h2{
+    font-family: sans-serif;
+    font-size: 45px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.information1{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.soldiers{
+    width: 300px;
+    height: 200px;
+    margin-top: 60px;
+}
+
+
+p{
+    color: white;
+}
+
+.info1{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    margin-top: 60px;
+    margin-left: 51px;
+
+}
+
+
+.information2{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.soldier2{
+    width: 300px;
+    height: 200px;
+    margin-top: 60px;
+}
+
+
+.info2{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    margin-top: 60px;
+    margin-right: 51px;
+
+}
+
+
+.information3{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.soldier3{
+    width: 300px;
+    height: 200px;
+    margin-top: 115px;
+}
+
+
+
+.info3{
+    background-color: black;
+    width: 100%;
+    height: 320px;
+    margin-top: 60px;
+    margin-left: 51px;
+
+}
+
+
+
+
+.information4{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.war{
+    width: 300px;
+    height: 200px;
+    margin-top: 60px;
+}
+
+
+.info4{
+    background-color: black;
+    width: 100%;
+    height: 230px;
+    margin-top: 60px;
+    margin-right: 51px;
+}
+footer{
+    
+    background-color: black;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.wiki{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    margin-left: 205px;
+    transition: 0.5s;
+    margin-top: 70px;
+}
+
+.wiki:hover{
+    background-color: #660D0D;
+    cursor: pointer;
+}
+.britanica{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    border-style: hidden;
+    margin-left: 205px;
+    transition: 0.5s;
+    margin-top: 70px;
+}
+
+.britanica:hover{
+    background-color: #660D0D;
+    cursor: pointer;
+}

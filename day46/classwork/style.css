@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: Roboto;
+}
+
+body{
+    background-color: #255250  ;
+
+}
+
+
+
+.register{
+    background-color: white;
+    width: 405px;
+    height: 550px;
+    box-shadow: 0px 2px 20px 11px black;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+h1{
+    padding-top: 20px;
+    
+}
+
+.login{width: 115px;
+height: 45px;
+border-radius: 15px;
+
+border: gray;
+}
+.signup{
+    width: 115px;
+height: 45px;
+border-radius: 15px;
+background-color: #030EF9 ;
+border-style: none;
+}
+
+
+.name{
+    height: 40px;
+    width: 240px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+
+.email{
+    height: 40px;
+    width: 240px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+
+.password{
+    height: 40px;
+    width: 240px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.conf-pass{
+    height: 40px;
+    width: 240px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.submit{
+    color: white;
+    width: 240px;
+    height: 45px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #030EF9;
+}

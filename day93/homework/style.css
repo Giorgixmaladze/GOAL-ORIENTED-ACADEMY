@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    gap: 5%;
+}
+
+#todo-input{
+    width: 45%;
+    height: 20%;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
+
+}
+#myform{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 30%;
+    height: 35%;
+    border: 1px solid grey;
+    outline: none;
+    font-size: larger;
+}
+input::placeholder{
+    font-size: large;
+}
+button{
+    width: 30%;
+    height: 30%;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+
+button:hover{
+    background-color: rgb(153, 153, 153);
+    color: rgb(49, 49, 49);
+}
+
+
+
+#todo-list{
+    width: 45%;
+    height: 50%;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+ol{
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    height: 100%;
+    
+    
+   
+}
+li{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+li button{
+    width: 15%;
+    font-size: large;
+    height: 100%;
+}
+
+li input{
+    width: 20%;
+    height: 60%;
+}
