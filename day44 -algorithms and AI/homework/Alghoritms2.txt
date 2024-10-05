@@ -1,0 +1,26 @@
+2. There is a set of numbers stored in a file, but we don’t know how many it
+contains. Write an algorithm in pseudocode to calculate the average of the
+numbers stored in this file. What type of operations does your algorithm
+do? How many of each of these operations does your algorithm do?
+
+
+
+ფაილში ინახება რიცხვების ნაკრები, მაგრამ ჩვენ არ ვიცით რამდენს
+შეიცავს. დაწერეთ ალგორითმი ფსევდოკოდში, რომ გამოვთვალოთ საშუალო
+ამ ფაილში შენახული რიცხვების რაოდენობა . რა ტიპის ოპერაციებს აკეთებს თქვენი ალგორითმი? 
+ამ ოპერაციებიდან რამდენს ასრულებს თქვენი ალგორითმი?
+
+
+function calculate_avg(numbers){
+    sum = 0 -- გავაკეთეთ ცვლადი sum რათა გავიგოთ ნაკრებში მყოფი ყველა რიცხვის ჯამი
+    count = 0 -- გავაკეთეთ ცვლადი count რათა დავითვალოთ ელემენტების რაოდენობა რიცხვების ნაკრებში
+
+
+    გადავუვლით for ციკლის დახმარებით რიცხვების ნაკრებს,რადგან მივწვდეთ ნაკრებში მყოფ თითოეულ რიცხვს
+    for( num = 0; num <= numbers.length; num ++){
+        sum += numbers[num] -- გავაკეთეთ ჯამი
+        count += 1 ვითვლით ყოველ იტერაციაზე ელემენტების რაოდენობას
+
+    }
+    return sum/count -- გავიგეთ საშუალო
+}

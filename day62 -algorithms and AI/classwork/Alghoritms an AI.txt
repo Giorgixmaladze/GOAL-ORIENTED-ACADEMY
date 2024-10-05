@@ -1,0 +1,2 @@
+Finished setting up linux virtual machine, then installed desktop on linux.
+Learnt many bash commands, installed text editor kate on virtual machine

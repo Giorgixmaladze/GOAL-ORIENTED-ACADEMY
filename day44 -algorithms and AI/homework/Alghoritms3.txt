@@ -1,0 +1,33 @@
+3. Write an algorithm, without using compound conditional expressions, that
+takes in three integers and determines if they are all distinct. On average,
+how many comparisons does your algorithm do? Remember to examine all
+input classes.
+
+
+
+დაწერეთ ალგორითმი რთული პირობითი გამონათქვამების გამოყენების გარეშე, რომ
+იღებს სამ მთელ რიცხვს და ადგენს, არის თუ არა ისინი ყველა განსხვავებული. საშუალოდ,
+რამდენ შედარებას აკეთებს თქვენი ალგორითმი? დაიმახსოვრეთ, რომ შეამოწმოთ ყველა შეყვანის კლასები.
+
+
+function compare(num1,num2,num3){
+    if num1 == num2: -- +1 შედარება
+        return false
+    if num2 == num3: -- +1 შედარება
+        return false
+    if num1 == num3: -- +1 შედარება
+        return false
+    return true
+
+}
+
+
+
+გავაკეთეთ ფუნქცია რომელსაც გადავეცით სამი რიცხვი სადაც უნდა შეგვედარებინა იყვნენ თუ არა ისინი განსხვავებული რიცხვები
+შევადარეთ ყველა რიცხვი ერთანეთს და შევამოწმეთ თუ ისინი უდრიდნენ ერთმანეთს  ვაბრუნებდით false_ს სხვა შემთხვევაში კი true_ს
+
+შედარებების რაოდენობა მაქსიმუმ იქნება 3 ხოლო მინიმუმ იქნება 1
+საშუალო შედარებების რაოდენობა კი იქნება 2 (1+2+3) / 3 = 2
+
+
+

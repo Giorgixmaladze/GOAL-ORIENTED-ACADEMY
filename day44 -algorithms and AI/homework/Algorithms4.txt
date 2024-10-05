@@ -1,0 +1,33 @@
+4. Write an algorithm that takes in three distinct integers and determines the
+largest of the three. What are the possible input classes that would have to
+be considered when analyzing this algorithm? Which one causes your algorithm 
+to do the most comparisons? Which one causes the least? (If there is
+no difference between the most and least, rewrite the algorithm with simple
+conditionals and without using temporary variables so that the best case gets
+done faster than the worst case.)
+
+
+
+დაწერეთ ალგორითმი, რომელიც მიიღებს სამ განსხვავებულ მთელ რიცხვს და განსაზღვრავს
+სამიდან ყველაზე დიდს. რა არის შესაძლო შეყვანის კლასები, რომლებიც უნდა იქნას გათვალისწინებული 
+ამ ალგორითმის გაანალიზებისას? რომელი იწვევს თქვენს ალგორითმს ყველაზე მეტ შედარებას? რომელი 
+იწვევს ყველაზე ნაკლებად?
+
+
+
+
+function max(num1,num2,num3){
+    if num1 > num2: -- +1შედარება
+        if num1 > num3: -- +1შედარება
+            return num1
+    if num 2 > num3: -- +1 შედარება
+        if num2 > num1: -- +1 შედარება
+    return num3
+}
+
+
+
+დავწერეთ ფუნქცია რომელსაც გადავეცით სამი რიცხვი და ამ ფუნქციაში დავწერეთ ალგორითმი რომლის საშუალებითაც ამოვიღებთ ამ სამი რიცხვიდან მაქსიმალურს
+
+საუკეთესო შემთხვევა ამ ალგორითმში იქნება როდესაც num1 იქნება მაქსიმალური .იქნება ყველაზე ცოტა შედარება
+ხოლო უარესი შემთხვევა იქნება როდესაც num3 იქნება მაქსიმალური.მაშინ იქნება ყველაზე მეტი შედარება
