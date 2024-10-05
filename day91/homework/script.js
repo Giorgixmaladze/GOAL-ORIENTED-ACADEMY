@@ -23,7 +23,7 @@ button.addEventListener("click" ,(e) => {
 
     const days = document.getElementsByClassName("number");
     days[2].textContent = Number(dayValue) - currDay;
-    days[1].textContent = Number(monthValue) - currMonths;
+    days[1].textContent =currMonth - Number(monthValue) ;
     days[0].textContent = currYears - Number(yearValue);
     if(dayValue === ""){
         p[0].style.color = "red";
