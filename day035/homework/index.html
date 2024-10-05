@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მარტივი პორტფოლიო</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .project {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            margin: 15px;
+            background: #ffffff;
+            float: left;
+            width: 30%;
+        }
+        .project img {
+            max-width: 100%;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;}
+        .btn {
+            display: inline-block;
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ჩემი პორტფოლიო</h1>
+        <nav>
+            <a href="#about">ჩვენ შესახებ</a>
+            <a href="#projects">პროექტები</a>
+            <a href="#contact">კონტაქტი</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>ჩვენ შესახებ</h2>
+            <p>გამარჯობა! მე ვარ <strong>ვიქტორია</strong>, ვებსაიტების დეველოპერი. მაქვს გამოცდილება HTML, CSS და JavaScript-ის გამოყენებით.</p>
+            <p>მიყვარს <em>კრეატიული</em> გადაწყვეტილებების შექმნა და <strong>უახლესი ტექნოლოგიების</strong> გამოყენება.</p>
+        </section>
+
+        <section id="projects">
+            <h2>პროექტები</h2>
+            <div class="project">
+                <img src="project1.jpg" alt="პროექტი 1">
+                <h3>პროექტი 1</h3>
+                <p>ეს არის აღწერა ჩემი პირველი პროექტის.</p>
+                <a href="#" class="btn">მეტის ნახვა</a>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="პროექტი 2">
+                <h3>პროექტი 2</h3>
+                <p>ეს არის აღწერა ჩემი მეორე პროექტის.</p>
+                <a href="#" class="btn">მეტის ნახვა</a>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="პროექტი 3">
+                <h3>პროექტი 3</h3>
+                <p>ეს არის აღწერა ჩემი მესამე პროექტის.</p>
+                <a href="#" class="btn">მეტის ნახვა</a>
+            </div>
+        </section>
+        <div class="container">
+            <section>
+                <h2>კონტაქტი</h2>
+                <p>ჩვენთან დაკავშირებისათვის, გამოიყენეთ ქვემოთ მოცემული ინფორმაცია:</p>
+                <p>ელ. ფოსტა: <a href="mailto:info@xyz.com">info@xyz.com</a></p>
+                <p>ტელეფონი: <strong>555-123-456</strong></p>
+                <h3>ჩვენი ოფისი:</h3>
+                <p>თბილისი, საქართველო</p>
+    
+                <h3>შეტყობინების გაგზავნა</h3>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">სახელი:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="surname">გვარი:</label>
+                    <input type="text" id="surname" name="surname" required>
+    
+                    <label for="age">ასაკი:</label>
+                    <input type="number" id="age" name="age" required>
+    
+                    <label for="email">ელ. ფოსტა:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">შეტყობინება:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">გაგზავნა</button>
+                </form>
+            </section>
+        </div>
+
+        <section id="contact">
+            <h2>კონტაქტი</h2>
+            <p>დაგვიკავშირდით:</p>
+            <p>ელ. ფოსტა: <strong>info@portfolio.com</strong></p>
+            <p>ტელეფონი: <strong>555-987-654</strong></p>
+        </section>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 ჩემი პორტფოლიო. ყველა უფლება დაცულია.</p>
+    </footer>
+</body>
+</html>
