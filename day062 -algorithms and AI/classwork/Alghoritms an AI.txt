@@ -1,2 +1,1 @@
-Finished setting up linux virtual machine, then installed desktop on linux.
-Learnt many bash commands, installed text editor kate on virtual machine
+Took notes in notebook, when we are looking for certain value in list, assuming that value is certainly in list only gives us slight improvision on program speed.

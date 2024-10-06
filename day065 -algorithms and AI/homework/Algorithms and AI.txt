@@ -1,4 +1,2 @@
-Algorithms and AI day 65:
-
 installed virtualbox and debian setting up debian and not finished in one lesson,we set to our debian:region,
 keyboard language,date and time,network hosts and disk partitions.

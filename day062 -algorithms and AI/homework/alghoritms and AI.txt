@@ -1,1 +1,5 @@
-Finished setting up linux virtual machine in class, deepend my knowledge overall of computers
+Task: Find average amount of comparsions, when looking for certain value in list assuming that 9/10 of time search value will be first element in list.
+
+Soultion:
+
+Haven't figured it out

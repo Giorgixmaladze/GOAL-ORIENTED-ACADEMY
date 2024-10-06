@@ -1,2 +1,1 @@
-Read docs: John Wakerly, Digital Design 34-35 webpage signed magnitude system
-Practiced positional system convertion
+Practice some mate terminal commands
