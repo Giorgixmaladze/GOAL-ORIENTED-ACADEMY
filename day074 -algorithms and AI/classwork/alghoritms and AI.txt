@@ -1,0 +1,4 @@
+Algorithms and AI day74:
+
+We finished setting up Shared folders between Linux and Windows and we Learn New topic and this is binary numbers,we learn
+what is byte and we had homewok to practice binary and byte counting
