@@ -3,7 +3,8 @@ const products = new Map();
 
 function addProduct(name, price) {
     products.set(name, price);
-    console.log(`Product ${name} succesfully added, price: ${price}$.`);
+    console.log(`Product ${name} succesfully added, price: ${products.get(name)}$.`);
+    
 }
 
 addProduct("Phone", 500);
@@ -12,30 +13,28 @@ addProduct("Laptop", 1500);
 addProduct("Tablet", 300);
 
 
-console.log(products)
 
 
 
 
 
-
-const cars = new Map();
-cars.set("Toyota", 2010);
-cars.set("Ford", 1999);
-cars.set("Subaru", 2014);
-cars.set("Bmw", 2019);
+const films = new Map();
+cars.set("Snowfall", 2023);
+cars.set("Spider-man no way home", 2021);
+cars.set("Fast X", 2023);
 
 
-function checkCar(title) {
-    if (cars.has(title)) {
-        console.log(`car : ${title} year : ${cars.get(title)}`);
+
+function checkFilm(title) {
+    if (films.has(title)) {
+        console.log(`film : ${title} year : ${films.get(title)}`);
     }
 }
 
 
-checkCar("Ford");
-checkCar("Toyota");
-checkCar("Mercedes");
+checkCar("SnowFall");
+checkCar("Spider-man no way home");
+checkCar("Fast X");
 
 
 
@@ -61,8 +60,6 @@ deleteAthlete("Usain Bolt");
 
 
 console.log(athletes);
-
-
 
 
 
@@ -96,6 +93,48 @@ if (carModels.size === 0) {
 
 
 
+
+const restaurants = new Map();
+
+
+restaurants.set("cafe verde","beef steak")
+restaurants.set("umami","sushi")
+restaurants.set("iveria", "salad")
+
+
+console.log(restaurants.size)
+
+
+
+
+
+
+
+const countries = new Map()
+
+
+countries.set("001","Georgia")
+countries.set("002","USA")
+countries.set("003","China")
+
+
+console.log(countries.keys())
+console.log(countries.values())
+
+
+
+
+const drinks =  new Map();
+
+
+drinks.set("cocacola", "200")
+drinks.set("fanta", "150")
+drinks.set("bebos kompoti", "10")
+
+drinks.forEach((calories,name){
+    console.log(`Drink : ${name}, Calories : ${calories}`)
+    
+})
 
 
 
