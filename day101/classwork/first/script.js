@@ -96,4 +96,15 @@ class Triangle extends Shape {
     calculateArea() {
         return 0.5 * this.base * this.height;
     }
+
 }
+
+
+
+/*Map-ის ინიციალიზაცია მონაცემებით**: შექმენი `Map`, რომელიც ინახავს სამ ქალაქს და მათ მოსახლეობას.
+ */
+
+
+
+
+
