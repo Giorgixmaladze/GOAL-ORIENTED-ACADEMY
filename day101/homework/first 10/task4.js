@@ -32,10 +32,6 @@ console.log(bank.deposit(50))
 
 
 
-const user = new Map()
-
-user.set("giorgi", 17)
-console.log(user)
 
 
 
