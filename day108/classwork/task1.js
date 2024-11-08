@@ -8,16 +8,21 @@ then და  catch ფუნქციები და ახსენით მ�
 ახსენით რა არის  json და რატომ არის json მეთოდი ასინქრონიზირებული
 */
 
-// fetch function will send request to following address to retrive data
-// then it will return data in json format
-const promise = fetch('https://jsonplaceholder.typicode.com/todos');
 
-promise 
-    // then and catch methods are consumers, which means they use
-    // data that was fetched from address
+
+//fetch ფუნქციის საშუალებით 
+//მოგვაქვს მოცემული მისამართიდან და ვაბრუნებთ ისევ promiseს
+const promise =  fetch('https://jsonplaceholder.typicode.com/todos');
+
+promise
     .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.log("Error occured", error));
+    .then((result) => console.log(result))
+    .catch((err) => console.log("Rejected"))
 
-// json is data format which is convinient for transfering data in web
-// json is asynchronous because promise takes time to fetch data from address
+//then ფუნქციის საშუალებით ვმართავთ resolveს შემთხვევაში მის შედეგს
+//catch ფუნქციის საშუალებით ვმართავთ reject შემთხვევეაში მის შედეგს
+
+
+//json ნიშნავს javascript-object-notation არის ობიექტი,რომელიც გამოიყენება 
+//სრუქტურირებული მონაცემთა გადაცემისთვის,json არის ასინქრონიზებული,რაც იმას ნიშნავს რომ
+//JSON-თან ასინქრონული მუშაობა ეხება იმ პროცესს, როდესაც მონაცემების გადაცემა და მიღება ხდება პარალელურად და არა ცალ-ცალკე ნაბიჯებით.

@@ -26,6 +26,3 @@ function renderItems(items){
     profiles.appendChild(div)
 }
 
-
-
-
