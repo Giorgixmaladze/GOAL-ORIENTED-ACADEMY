@@ -1,22 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-
-
-body{
+body {
     background-color: rgb(41, 40, 40);
 }
 
-#container{
+#container {
     height: 187vh;
-    
 }
 
-header{
+header {
     height: 6%;
     display: flex;
     justify-content: center;
@@ -25,10 +22,11 @@ header{
     width: 100%;
 }
 
-h1{
+h1 {
     color: greenyellow;
 }
-nav{
+
+nav {
     height: 10vh;
     width: 70%;
     border-radius: 20px;
@@ -38,7 +36,8 @@ nav{
     align-items: center;
     gap: 6%;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: white;
     width: 10%;
@@ -50,11 +49,11 @@ nav a{
     border-radius: 10px;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: rgb(78, 78, 78);
 }
 
-#Registration{
+#Registration {
     width: 20%;
     height: 10vh;
     display: flex;
@@ -63,14 +62,13 @@ nav a:hover{
     gap: 5%;
 }
 
-
-#Registration a{
+#Registration a {
     width: 50%;
     height: 65%;
     border-radius: 15px;
 }
 
-#signup{
+#signup {
     width: 100%;
     height: 100%;
     border: none;
@@ -79,16 +77,15 @@ nav a:hover{
     color: white;
     font-size: 1rem;
     transition: 0.25s;
-    border-radius: 15px;
     cursor: pointer;
 }
 
-#Registration a:hover{
+#Registration a:hover {
     background-color: rgba(29, 29, 29, 0.726);
     border-radius: 15px;
-    
 }
-#login{
+
+#login {
     width: 100%;
     height: 100%;
     background-color: greenyellow;
@@ -99,17 +96,16 @@ nav a:hover{
     cursor: pointer;
 }
 
-#login:hover{
-    background-color:  rgba(29, 29, 29, 0.726);
+#login:hover {
+    background-color: rgba(29, 29, 29, 0.726);
     color: white;
-    
 }
 
-main{
+main {
     height: 100vh;
 }
 
-#content{
+#content {
     width: 100%;
     height: 60%;
     margin-top: 10%;
@@ -117,24 +113,22 @@ main{
     flex-direction: column;
 }
 
-
-#content h2{
+#content h2 {
     color: white;
     padding-top: 5%;
     padding-left: 5%;
     font-size: 2rem;
 }
 
-section div{
+section div {
     width: 40%;
     height: 100%;
     margin-top: 5%;
     background-color: #393939;
     border-radius: 15px;
-    
 }
 
-#content div h3{
+#content div h3 {
     color: white;
     padding-top: 5%;
 }
@@ -145,18 +139,17 @@ section {
     height: 60%;
 }
 
-
-section div p{
+section div p {
     color: white;
     padding-top: 10%;
 }
-footer{
+
+footer {
     margin-top: 20%;
     height: 38vh;
-
 }
 
-#footer-content{
+#footer-content {
     background-color: rgb(27, 27, 27);
     height: 100%;
     display: flex;
@@ -166,16 +159,170 @@ footer{
     gap: 5%;
 }
 
-#footer-content h2{
-    color:greenyellow;
+#footer-content h2 {
+    color: greenyellow;
 }
 
-#navigation{
+#navigation {
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
 }
+
 #footer-content p {
-    color:white;
+    color: white;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1200px) {
+    nav {
+        width: 80%;
+    }
+
+    #Registration {
+        width: 30%;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    section div {
+        width: 100%;
+        height: auto;
+    }
+
+    #content h2 {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    nav {
+        width: 90%;
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    nav a {
+        width: 100%;
+        height: 60%;
+    }
+
+    #Registration {
+        width: 40%;
+        height: 12vh;
+        flex-direction: column;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    section div {
+        width: 100%;
+        height: 40vh;
+    }
+
+    #content {
+        margin-top: 15%;
+    }
+
+    #content h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    nav a {
+        width: 100%;
+        height: 50%;
+    }
+
+    #Registration {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    section div {
+        width: 100%;
+        height: 30vh;
+    }
+
+    #content {
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    #content h2 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        margin-top: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    #content h2 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    section div {
+        width: 100%;
+        height: 25vh;
+    }
+
+    footer {
+        margin-top: 50%;
+    }
+
+    #footer-content h2 {
+        font-size: 1.2rem;
+    }
 }

@@ -1,19 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-
-
-body{
+body {
     background-color: rgb(41, 40, 40);
-    
 }
 
-
-header{
+header {
     height: 6%;
     display: flex;
     justify-content: center;
@@ -22,10 +18,11 @@ header{
     width: 100%;
 }
 
-h1{
+h1 {
     color: greenyellow;
 }
-nav{
+
+nav {
     height: 10vh;
     width: 70%;
     border-radius: 20px;
@@ -35,7 +32,8 @@ nav{
     align-items: center;
     gap: 6%;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: white;
     width: 15%;
@@ -47,12 +45,11 @@ nav a{
     border-radius: 10px;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: rgb(78, 78, 78);
 }
 
-
-#Registration{
+#Registration {
     width: 20%;
     height: 10vh;
     display: flex;
@@ -61,14 +58,13 @@ nav a:hover{
     gap: 5%;
 }
 
-
-#Registration a{
+#Registration a {
     width: 50%;
     height: 65%;
     border-radius: 15px;
 }
 
-#signup{
+#signup {
     width: 100%;
     height: 100%;
     border: none;
@@ -77,16 +73,15 @@ nav a:hover{
     color: white;
     font-size: 1rem;
     transition: 0.25s;
-    border-radius: 15px;
     cursor: pointer;
 }
 
-#Registration a:hover{
+#Registration a:hover {
     background-color: rgba(29, 29, 29, 0.726);
     border-radius: 15px;
-    
 }
-#login{
+
+#login {
     width: 100%;
     height: 100%;
     background-color: greenyellow;
@@ -97,74 +92,67 @@ nav a:hover{
     cursor: pointer;
 }
 
-#login:hover{
-    background-color:  rgba(29, 29, 29, 0.726);
+#login:hover {
+    background-color: rgba(29, 29, 29, 0.726);
     color: white;
-    
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     height: 100vh;
 }
 
-
-
-#main-content{
+#main-content {
     width: 85%;
     margin-top: 10%;
     height: 100vh;
 }
-
-
 
 #main-content h2 {
     color: white;
     font-size: 2rem;
 }
 
-
-#main-content p{
+#main-content p {
     color: white;
     padding-top: 5%;
     line-height: 30px;
 }
 
-
-#reviews{
+#reviews {
     width: 100%;
     height: 50%;
     display: flex;
     gap: 10%;
 }
 
-#reviews div{
+#reviews div {
     margin-top: 5%;
     width: 45%;
     height: 60%;
     background-color: #0000003d;
     border-radius: 15px;
 }
-#reviews div h3{
+
+#reviews div h3 {
     color: white;
     padding-top: 5%;
     padding-left: 5%;
 }
 
-#reviews div p{
+#reviews div p {
     font-size: 0.8rem;
     color: greenyellow;
     padding-left: 5%;
 }
 
-footer{
+footer {
     margin-top: 20%;
     height: 38vh;
-
 }
 
-#footer-content{
+#footer-content {
     background-color: rgb(27, 27, 27);
     height: 100%;
     display: flex;
@@ -174,16 +162,170 @@ footer{
     gap: 5%;
 }
 
-#footer-content h2{
-    color:greenyellow;
+#footer-content h2 {
+    color: greenyellow;
 }
 
-#navigation{
+#navigation {
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
 }
+
 #footer-content p {
-    color:white;
+    color: white;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1200px) {
+    nav {
+        width: 80%;
+    }
+
+    #Registration {
+        width: 30%;
+    }
+
+    #reviews {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    #reviews div {
+        width: 100%;
+        height: auto;
+    }
+
+    #main-content {
+        width: 90%;
+    }
+
+    #main-content h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    #Registration {
+        width: 40%;
+        height: 12vh;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 90%;
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    nav a {
+        width: 100%;
+        height: 60%;
+    }
+
+    #reviews {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    #reviews div {
+        width: 100%;
+        height: 30vh;
+    }
+
+    #main-content {
+        margin-top: 15%;
+    }
+
+    #main-content h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    nav a {
+        width: 100%;
+        height: 50%;
+    }
+
+    #Registration {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    #reviews {
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    #reviews div {
+        width: 100%;
+        height: 30vh;
+    }
+
+    #main-content {
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    #main-content h2 {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    #main-content h2 {
+        font-size: 1.2rem;
+    }
+
+    #reviews {
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    #reviews div {
+        width: 100%;
+        height: 25vh;
+    }
+
+    footer {
+        margin-top: 50%;
+    }
+
+    #footer-content h2 {
+        font-size: 1.2rem;
+    }
 }
