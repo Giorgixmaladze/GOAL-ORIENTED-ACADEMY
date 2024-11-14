@@ -1,0 +1,17 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "main": "script.js",
+  "dependencies": {
+    "dateformat": "^3.0.2",
+    "superhero": "^2.14.24",
+    "superheroes": "^4.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giorgi Khmaladze",
+  "license": "ISC",
+  "description": ""
+}
