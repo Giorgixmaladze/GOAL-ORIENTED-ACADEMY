@@ -1,0 +1,16 @@
+{
+  "name": "superhero",
+  "version": "1.0.0",
+  "description": "this is superhero",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "giorgi khmaladze",
+  "license": "ISC",
+  "dependencies": {
+    "superhero": "^2.14.24",
+    "superheroes": "^4.0.0"
+  }
+}
