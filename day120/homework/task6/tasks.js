@@ -13,7 +13,7 @@ function add(task,isCompleted){
     console.log(arr)
 }
 
-export {add}
+export default add
 
 
 
