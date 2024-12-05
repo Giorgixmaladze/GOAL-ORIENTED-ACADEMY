@@ -14,6 +14,7 @@ function renderCryptoData(data){
     `
 }
 
+
 const fetchCryptoData = async (crypto) => {
     try {
         
@@ -21,7 +22,7 @@ const fetchCryptoData = async (crypto) => {
         const data = await response.json();
         renderCryptoData(data)
         console.log(data)
-    } catch (error) {
+    }catch (error) {
         console.log("Error fetching crypto data:", error)
     }
 };
