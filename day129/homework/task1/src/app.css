@@ -1,0 +1,17 @@
+.app{
+    background-color: rgb(200, 224, 224);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.profile-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+.profile-card{
+    text-align: center;
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
