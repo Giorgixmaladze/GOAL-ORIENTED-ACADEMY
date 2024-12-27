@@ -26,9 +26,11 @@ form.addEventListener("submit" , (e) => {
     items.push(item);
     console.log(items)
     localStorage.setItem('toDo',item)
-    
     form.item.value = "";
 })
+
+
+
 
 
 

@@ -40,6 +40,8 @@ input{
 input::placeholder{
     font-size: large;
 }
+
+
 button{
     width: 30%;
     height: 30%;
