@@ -1,35 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React,{ useState } from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+function App(){
+  const [tasks,setTask] = useState([])
+
+  
+  function handleSubmit(e){
+    e.preventDefault()
+    const newTask = {
+      id : Date.now(),
+      name: e.target.task.value,
+      category: e.target.categories.value,
+      completed: false
+    }
+    setTask([newTask, ...tasks])
+    
+  }
+
+  function remove(e){
+    e.preventDefault()
+    tasks.map((task,index) =>{
+      setTask(tasks.splice(tasks[index],1))
+    })
+  }
+  
+  
+  
+
+  
+  return(
+    <main>
+      <form onSubmit={handleSubmit} >
+        <input type="text" placeholder='Add task' required name="task"/>
+        <select name="categories" >
+          <option value="Work">Work</option>
+          <option value="personal_study">Personal study</option>
+        </select>
+         
+        <button >Submit</button>
+      </form>
+
+
+      <ul>
+        {
+          tasks.map( (task,index) =>{
+            return(
+              <li key={index}>{task.name}, Category: {task.category} <input name='check' type="checkbox" /> <button onClick={remove}>Delete</button></li>
+            )
+          })
+          
+        }
+
+      </ul>
+      
+    </main>
+
+    
   )
 }
-
 export default App
