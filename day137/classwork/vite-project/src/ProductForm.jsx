@@ -1,42 +1,4 @@
 import React, { useState } from 'react';
 
 
-
-function ProductForm({ addProduct }) {
-  const [name, setName] = useState('');
-  const [date, setDate] = useState('');
-  const [price, setPrice] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    addProduct(name, date, price);
-    setName('');
-    setDate('');
-    setPrice('');
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <Input
-        type="text"
-        placeholder="Product Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <Input
-        type="date"
-        value={date}
-        onChange={(e) => setDate(e.target.value)}
-      />
-      <Input
-        type="number"
-        placeholder="Price"
-        value={price}
-        onChange={(e) => setPrice(e.target.value)}
-      />
-      <Button type="submit">Add Product</Button>
-    </form>
-  );
-}
-
-export default ProductForm;
+// 1) შექმენით online მაღაზიის მსგავსი საიტი, პირველ გვერდზე გექნებათ ფორმა რომელშიც უნდა შეგვეძლოს პროდუქტების დამატება (როგორც moderators), ახალი პროდუქტი სიაში დამატებისთანავე მყისიერად ემატება გვერდზე, ინფორმაცია რომელიც უნდა შეიტანოს არის: სახელი, გამოშვების ვადა, ფასი. ფორმის დადასტურებისთანავე ინფორმაციის შესაბამისი ობიექტი უნდა შექიმნას, პროექტი შეასრულეთ vite-ის (react) გამოყენებით, პროდუქტის დიზანი უნდა იყოს ლამაზი
