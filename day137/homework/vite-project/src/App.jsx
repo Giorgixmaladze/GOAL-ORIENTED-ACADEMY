@@ -45,7 +45,7 @@ function App(){
         {
           tasks.map( (task,index) =>{
             return(
-              <li key={index}>{task.name}, Category: {task.category} <input name='check' type="checkbox" /> <button onClick={remove}>Delete</button></li>
+              <li key={index}>{task.name}, Category: {task.category} <button onClick={remove}>Delete</button></li>
             )
           })
           
