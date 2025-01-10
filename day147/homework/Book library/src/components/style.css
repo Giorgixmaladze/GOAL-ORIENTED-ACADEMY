@@ -33,12 +33,22 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    gap: 30px;
 }
 
 
 #books div{
     width:80%;
     height: 400px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    background-color: rgb(193, 192, 192);
 }
 
 
@@ -60,6 +70,7 @@ main{
 #content-header{
     display: flex;
     align-items: center;
+    box-shadow: 0px 0px 20px gray;
 }
 form{
     width: 100%;

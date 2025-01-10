@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./style.css";
 import guest from "./guest.png"
+import Nav from "./nav";
 
 // https://www.googleapis.com/books/v1/volumes?q={searchTerm}
 
@@ -68,8 +69,12 @@ function Books() {
         e.target.reset()
     }
 
-    function toLibrary(){
-        
+    function toLibrary(book){
+        setLibrary(prev=>{
+            const newLib = [...prev,book]
+            localStorage.setItem("Library",JSON.stringify(newLib))
+            return newLib
+        })
         console.log(library)
     }
     
@@ -102,7 +107,8 @@ function Books() {
                                     <img src={item.image} alt="" />
                                     <h3>{item.title}</h3>
                                     <p>{item.subtitle}</p>
-                                    <button onClick={toLibrary}>Add To Library</button>
+                                    <button onClick={() => toLibrary(item)}>Add To Library</button>
+                                  
                                 </div>
                             )
                         })
