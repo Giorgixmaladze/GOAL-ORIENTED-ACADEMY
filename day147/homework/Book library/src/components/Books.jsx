@@ -1,16 +1,23 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
 import guest from "./guest.png"
 import Nav from "./nav";
+import Sidebar from "./sidebar";
+
 
 // https://www.googleapis.com/books/v1/volumes?q={searchTerm}
 
 
 function Books() {
+
     const [bookData, setBookData] = useState([])
     const [searchQuery, setSearchQuery] = useState('');
     const [library,setLibrary] = useState([])
+    const navigate = useNavigate()
 
+
+    
     useEffect(() => {
         const books = JSON.parse(localStorage.getItem("books"))
 
@@ -63,29 +70,36 @@ function Books() {
 
     }, [searchQuery]);
 
+
+    useEffect(() => {
+        const lib = JSON.parse(localStorage.getItem("Library"))
+
+        if (lib) {
+            setLibrary(lib)
+        }
+
+    }, [])
+
     function handleSearch(e) {
         e.preventDefault()
         setSearchQuery(e.target.book.value)
         e.target.reset()
     }
 
+
     function toLibrary(book){
         setLibrary(prev=>{
-            const newLib = [...prev,book]
-            localStorage.setItem("Library",JSON.stringify(newLib))
-            return newLib
+            localStorage.setItem("Library",JSON.stringify([...prev,book]))
+            return [...prev,book]
+            
         })
-        console.log(library)
+        
     }
     
     return (
 
         <main>
-            <div id="sidebar">
-                <div id="sidebar-header">
-                    <h3>MyBooks.com</h3>
-                </div>
-            </div>
+            <Sidebar />
 
             <div id="content">
                 <div id="content-header">
@@ -108,7 +122,6 @@ function Books() {
                                     <h3>{item.title}</h3>
                                     <p>{item.subtitle}</p>
                                     <button onClick={() => toLibrary(item)}>Add To Library</button>
-                                  
                                 </div>
                             )
                         })
