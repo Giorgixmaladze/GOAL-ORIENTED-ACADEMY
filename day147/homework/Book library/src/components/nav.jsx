@@ -1,18 +1,23 @@
-import { useState,useEffect } from "react";
-import {Link, useNavigate} from "react-router-dom"
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom"
 function Nav() {
-    const navigate = useNavigate()
 
-    return(
-    <div id="nav">
-        <Link to="./library">
-           <button>Library</button> 
-        </Link>
-       
-       <Link to="/"><button>Home</button></Link>
-        
-        
-    </div>)
+    return (
+        <div id="nav">
+
+            <button>
+                <Link to="/library">Library</Link>
+            </button>
+
+
+
+            <button>
+                <Link to="/">Home</Link>
+            </button>
+
+
+
+        </div >)
 }
 
 export default Nav;
