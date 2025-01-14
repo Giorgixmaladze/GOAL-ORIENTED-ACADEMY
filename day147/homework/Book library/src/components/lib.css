@@ -44,19 +44,20 @@ main{
 .book{
     width:90%;
     height: 400px;
-    border: 1px solid;
+    border: none;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 15px;
-    background-color: rgb(193, 192, 192);
+    background-color: rgb(239, 239, 239);
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.378);
 }
 
 
 .book img{
-    padding-left: 10%;
+    width: 150px;
 }
 
 #sidebar-header{
