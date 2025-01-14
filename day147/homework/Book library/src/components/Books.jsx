@@ -53,7 +53,8 @@ function Books() {
                         title: item.volumeInfo.title,
                         author: item.volumeInfo.authors || "Unknown author",
                         image: item.volumeInfo.imageLinks.thumbnail,
-                        subtitle: item.volumeInfo.subtitle || ""
+                        subtitle: item.volumeInfo.subtitle || "",
+                        read: false
                     },
                 ]);
             });
@@ -87,12 +88,25 @@ function Books() {
     }
 
 
-    function toLibrary(book){
-        setLibrary(prev=>{
-            localStorage.setItem("Library",JSON.stringify([...prev,book]))
-            return [...prev,book]
+    function toLibrary(index){
+        // setLibrary(prev=>{
+        //     localStorage.setItem("Library",JSON.stringify([...prev,book]))
+        //     return [...prev,book]
             
-        })
+        // })
+        let updated = [...library]
+        const book = bookData[index]
+
+        if(library.some(item => item.title ===book.title)){
+            updated = updated.filter((__,i)=>i !== index)
+        }else{
+            
+            setLibrary(updated)
+            updated.push(book)
+
+        }
+        setLibrary(updated)
+        localStorage.setItem("Library",JSON.stringify(updated))
         
     }
     
@@ -117,11 +131,14 @@ function Books() {
                     {
                         bookData.map((item, index) => {
                             return (
-                                <div key={index}>
+                                <div className = "book" key={index}>
                                     <img src={item.image} alt="" />
-                                    <h3>{item.title}</h3>
-                                    <p>{item.subtitle}</p>
-                                    <button onClick={() => toLibrary(item)}>Add To Library</button>
+                                    <div className="info">
+                                        <h3>{item.title}</h3>
+                                        <p>{item.subtitle}</p>
+                                        <button onClick={() => toLibrary(index)}>Add To Library</button>
+                                    </div>
+                                    
                                 </div>
                             )
                         })

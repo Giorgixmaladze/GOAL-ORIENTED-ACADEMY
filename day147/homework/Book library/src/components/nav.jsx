@@ -15,6 +15,10 @@ function Nav() {
                 <Link to="/">Home</Link>
             </button>
 
+            <button>
+                <Link to="/readed">Readed Books</Link>
+            </button>
+
 
 
         </div >)
