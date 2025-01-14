@@ -148,3 +148,21 @@ input{
 #readed div{
     display: flex;
 }
+.info button{
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    background-color:#ff7f66 ;
+    box-shadow: 0px 0px 20px 10px rgb(205, 205, 205);
+    color: white;
+    font-size:1rem;
+    transition: 0.25s;
+    font-weight: 600;
+}
+
+.info button:hover{
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #ff7f66 ;
+    color: #ff7f66;
+}

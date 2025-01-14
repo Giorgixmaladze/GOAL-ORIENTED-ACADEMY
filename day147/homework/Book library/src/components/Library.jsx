@@ -81,7 +81,7 @@ function Library() {
                                         <div id="info">
                                             <h3>{item.title}</h3>
                                             <p>{item.subtitle}</p>
-                                            <div id="readed">
+                                            <div className="readed">
                                                 <div>
                                                     <label htmlFor="Read">Readed</label>
                                                     <input type="checkbox" name="check" checked = {readed.some(read => read.title === item.title)} onChange={() => toReaded(index)} id="Read" />
