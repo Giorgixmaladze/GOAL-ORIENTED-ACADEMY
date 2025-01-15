@@ -6,24 +6,9 @@ import "./lib.css"
 
 
 
-function Library() {
-    const [books,setBooks] = useState([])
-    const [readed,setReaded] = useState([])
-    
-    useEffect(()=>{
-        const lib = JSON.parse(localStorage.getItem("Library"))
-
-        if (lib) {
-            lib.map(item => {
-                setBooks(prev => [...prev,item])
-            });
-            
-        }
-
-        const readBooks = JSON.parse(localStorage.getItem("Readed")) || []
-        setReaded(readBooks)
-    },[])
-
+function Library({readedBooks,lib}) {
+    const [readed,setReaded] = readedBooks
+    const [books,setBooks] = lib
 
     
     function removeBook(index) {

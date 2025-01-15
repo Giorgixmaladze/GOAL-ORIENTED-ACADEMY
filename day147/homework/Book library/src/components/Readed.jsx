@@ -3,23 +3,15 @@ import "./lib.css"
 import Sidebar from "./sidebar";
 import guest from './guest.png';
 
-function Readed() {
-    const [readed, setReaded] = useState([])
+function Readed({readedBook}) {
+    
+    const [readed,setReaded] = readedBook
 
-    useEffect(() => {
-        const read = JSON.parse(localStorage.getItem("Readed"))
 
-        if(read){
-            read.map(item =>{
-                setReaded(prev => [...prev,item])
-            })
-        }
-    },[])
-
-    function removeReaded(index){
-        const updatedReaded = readed.filter((_, i) => i !== index); // Remove the book at the specified index
-        setReaded(updatedReaded); // Update state
-        localStorage.setItem("Readed", JSON.stringify(updatedReaded)); // Persist to localStorage
+    function removeReaded(delId){
+        const updatedReaded = readed.filter((item) => item.id !== delId); // Remove the book at the specified index
+        setReaded(updatedReaded); 
+        
     }
 
 
@@ -47,9 +39,8 @@ function Readed() {
                                         <div id="readed">
                                             <div>
                                                 <label htmlFor="Read">Readed</label>
-                                                <input type="checkbox" name="check" checked={readed.some(read => read.title === item.title)} onChange={() => toReaded(index)} id="Read" />
                                             </div>
-                                            <button onClick={() => removeReaded(index)}>Remove book</button>
+                                            <button onClick={() => removeReaded(item.id)}>Remove book</button>
                                         </div>
                                     </div>
 

@@ -9,11 +9,12 @@ import Sidebar from "./sidebar";
 // https://www.googleapis.com/books/v1/volumes?q={searchTerm}
 
 
-function Books() {
-
+function Books({lib,readedBooks}) {
+    const [books,setBooks] = lib
     const [bookData, setBookData] = useState([])
     const [searchQuery, setSearchQuery] = useState('');
-    const [library,setLibrary] = useState([])
+    // const [library,setLibrary] = useState([])
+
     const navigate = useNavigate()
 
 
@@ -42,7 +43,7 @@ function Books() {
             const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchQuery}`);
             const data = await res.json();
 
-
+            
 
 
 
@@ -54,7 +55,7 @@ function Books() {
                         author: item.volumeInfo.authors || "Unknown author",
                         image: item.volumeInfo.imageLinks.thumbnail,
                         subtitle: item.volumeInfo.subtitle || "",
-                        read: false
+                        id: item.id
                     },
                 ]);
             });
@@ -72,14 +73,7 @@ function Books() {
     }, [searchQuery]);
 
 
-    useEffect(() => {
-        const lib = JSON.parse(localStorage.getItem("Library"))
 
-        if (lib) {
-            setLibrary(lib)
-        }
-
-    }, [])
 
     function handleSearch(e) {
         e.preventDefault()
@@ -88,25 +82,37 @@ function Books() {
     }
 
 
-    function toLibrary(index){
+    function toLibrary(item){
         // setLibrary(prev=>{
         //     localStorage.setItem("Library",JSON.stringify([...prev,book]))
         //     return [...prev,book]
             
         // })
-        let updated = [...library]
-        const book = bookData[index]
 
-        if(library.some(item => item.title ===book.title)){
-            updated = updated.filter((__,i)=>i !== index)
-        }else{
-            
-            setLibrary(updated)
-            updated.push(book)
-
+        for(const i of [...books,...readedBooks]){
+            if(i.id === item.id){
+                return;
+            }
         }
-        setLibrary(updated)
-        localStorage.setItem("Library",JSON.stringify(updated))
+
+
+        setBooks(prev => [...prev,item])
+        // let updated = [...library]
+        // const book = bookData[index]
+
+        // if(library.some(item => item.title ===book.title)){
+        //     updated = updated.filter((__,i)=>i !== index)
+        // }else{
+        //     setLibrary(updated)
+        //     updated.push(book)
+
+        // }
+        
+        
+
+
+        // setLibrary(updated)
+        // localStorage.setItem("Library",JSON.stringify(updated))
         
     }
     
@@ -136,7 +142,7 @@ function Books() {
                                     <div className="info">
                                         <h3>{item.title}</h3>
                                         <p>{item.subtitle}</p>
-                                        <button onClick={() => toLibrary(index)}>Add To Library</button>
+                                        <button onClick={() => toLibrary(item)}>Add To Library</button>
                                     </div>
                                     
                                 </div>
