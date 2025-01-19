@@ -6,58 +6,8 @@ function Calculator() {
     const [secondNumber, setSecondnumber] = useState("")
     const [op, setOp] = useState("")
 
-
-    // useEffect(() => {
-    //     if (op.length === 1 && op[0] === "=") {
-    //         setOp([])
-    //     } else if (firstNumber.length === 2) {
-    //         if (op[0] === "+") {
-    //             setFirstnumber(Number(firstNumber + secondNumber))
-    //         } else if (op[0] === "-") {
-    //             setFirstnumber(Number(firstNumber - secondNumber))
-    //         } else if (op[0] === "*") {
-    //             setFirstnumber(Number(firstNumber * secondNumber))
-    //         } else if (op[0] === "/") {
-    //             setFirstnumber(secondNumber === "0" ? "Error" : firstNumber / secondNumber)
-    //         }
-    //         secondNumber("")
-    //         op[1] !== "=" ? setOp(prev => [prev[1]]) : setOp([])
-    //     }
-    // }, [op])
-
-
-
-
-
-
     const handleClick = (item) => {
-        // setFirstnumber(prev => prev + item)
-        // if (item === "reset") {
-        //     setFirstnumber("")
-        //     setSecondnumber("")
-        //     setOp([])
-        // } else if (item === "del") {
-        //     secondNumber === "" ? setFirstnumber("") : setSecondnumber("")
-        // } else if (typeof item !== "number" && item !== ".") {
-        //     setOp(prev => {
-        //         return prev.length === 1 && prev[0] === item && secondNumber === "" ? [item] : [...prev, item]
-        //     })
-
-        // } else {
-        //     if (op.length < 1) {
-
-        //         if (item === "." && !firstNumber.includes(item) || typeof item === "number") {
-        //             setFirstnumber(prev => prev + item)
-
-        //         }
-
-        //     } else {
-        //         if (item === "." && !secondNumber.includes(item) || typeof item === "number") {
-        //             setSecondnumber(prev => prev + item)
-
-        //         }
-        //     }
-        // }
+      
         if (item === "reset") {
             setFirstnumber("");
             setSecondnumber("");
@@ -65,8 +15,6 @@ function Calculator() {
         } else if (item === "del") {
             if (secondNumber) {
                 setSecondnumber(secondNumber.slice(0, -1));
-            } else if (op) {
-                setOp("");
             } else {
                 setFirstnumber(firstNumber.slice(0, -1));
             }

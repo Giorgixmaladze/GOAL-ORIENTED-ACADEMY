@@ -9,7 +9,7 @@ function Readed({readedBook}) {
 
 
     function removeReaded(delId){
-        const updatedReaded = readed.filter((item) => item.id !== delId); // Remove the book at the specified index
+        const updatedReaded = readed.filter((item) => item.id !== delId); 
         setReaded(updatedReaded); 
         
     }
