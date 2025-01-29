@@ -21,10 +21,10 @@ function Register() {
         e.preventDefault();
 
         const enteredAcc = {
-            name: e.target.name.value,
+            name:e.target.name.value,
             surname:e.target.surname.value,
             email: e.target.email.value,
-            password: e.target.password.value,
+            password: e.target.password.value
         };
 
 
