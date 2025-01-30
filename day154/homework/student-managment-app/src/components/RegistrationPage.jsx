@@ -1,21 +1,30 @@
 import { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./registration.css"
-function Register() {
+import { use } from "react";
+function Register({us,curUs}) {
 
-    const [users, setUsers] = useState([])
-    const [curUser, setCurUser] = useState([])
+    const [users, setUsers] = us
+    const [curUser, setCurUser] = curUs
 
     const navigate = useNavigate();
 
     useEffect(() => {
 
-        if (users.length > 0) {
-            localStorage.setItem("users", JSON.stringify(users));
-        }
+       
+        localStorage.setItem("users", JSON.stringify(users));
+       
         localStorage.setItem("CurrentUser", JSON.stringify(curUser))
 
     }, [users, curUser]);
+
+
+
+    useEffect(() =>{
+        const users = JSON.parse(localStorage.getItem("users"))
+
+        setUsers(users)
+    },[])
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -24,7 +33,8 @@ function Register() {
             name:e.target.name.value,
             surname:e.target.surname.value,
             email: e.target.email.value,
-            password: e.target.password.value
+            password: e.target.password.value ,
+            role:e.target.role.value
         };
 
 
@@ -66,6 +76,12 @@ function Register() {
                         placeholder="Enter your Password"
                         required
                     />
+                    <select name="role">
+                        <option value="Leader">Leader</option>
+                        <option value="Mini-Leader">Mini-Leader</option>
+                        <option value="Mentor's-Assistant">Mentors Assistent</option>
+                        <option value="Mentor">Mentor</option>
+                    </select>
 
 
                     <button type="submit">Submit</button>

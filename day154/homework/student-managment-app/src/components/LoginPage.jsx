@@ -6,20 +6,27 @@ import "./login.css"
 
 
 
-function Login(){
+function Login({curUs}){
  
     const [users,setUsers] = useState([])
-    const [curUser,setCurUser] = useState(JSON.parse(localStorage.getItem("CurrentUser")))
+    const [curUser,setCurUser] = useState([])
 
 
     const navigate = useNavigate()
     useEffect(() => {
         const storedUsers = JSON.parse(localStorage.getItem("users"));
         
+        const curUus = JSON.parse(localStorage.getItem("CurrentUser"))
         setUsers(storedUsers);
-        
+        setCurUser(curUus)
     }, []);
     
+
+    useEffect(() =>{
+        localStorage.setItem("CurrentUser", JSON.stringify(curUser))
+    },[curUser])
+
+    console.log(curUser)
 
 
 
@@ -34,7 +41,14 @@ function Login(){
 
         const logged = users.find(user => user.email === entered.email && user.password === entered.password)
         if(logged){
-            
+            const exists = users.findIndex(user => user.email === entered.email && user.password == entered.password)
+            if(exists === -1){
+                alert("Sdvds")
+            }else{
+                setCurUser(users[exists])
+            }
+
+
             navigate('/management')
          
           

@@ -33,7 +33,7 @@ function Managment() {
 
     const handleLogOut = () => {
         navigate("/login")
-        setCurUser({})
+
     }
 
 
@@ -47,10 +47,15 @@ function Managment() {
 
                     <div id="user">
                         <p>{curUser.name[0]}{curUser.surname[0]}</p>
+                       
                     </div>
 
                     <div id="info">
-                        <p>User</p>
+                        <div>
+                        <p>User --</p> 
+                        <p>{curUser.role}</p> 
+                        </div>
+                        
                         <p>{curUser.email}</p>
                     </div>
 

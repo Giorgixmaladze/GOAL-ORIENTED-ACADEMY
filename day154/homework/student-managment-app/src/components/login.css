@@ -23,7 +23,7 @@ form{
     display: flex;
     flex-direction: column;
     height: 70%;
-    gap: 10%;
+    gap: 7%;
 }
 
 main{
