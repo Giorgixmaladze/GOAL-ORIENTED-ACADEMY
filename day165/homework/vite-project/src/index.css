@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#body {
+    height: 100vh;
+}
+
+
+#light {
+    width: 40px;
+}
+
+#parent {
+    width: 590px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#change {
+    display: flex;
+    align-items: center;
+    width: 12%;
+    justify-content: space-around;
+}
+
+#change p {
+    text-transform: uppercase;
+}
+
+#change img {
+    width: 30px;
+}
+
+
+#search {
+    background-color: #1f2a48;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 10px black;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 155px;
+    height: 100%;
+    align-items: center;
+
+}
+
+input{
+    height: 100%;
+    width: 223px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+input::placeholder{
+    color: gray;
+}
+
+button{
+    height: 75%;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+    background-color:#0079fe ;
+    color: white;
+    font-size: 1rem;
+}
