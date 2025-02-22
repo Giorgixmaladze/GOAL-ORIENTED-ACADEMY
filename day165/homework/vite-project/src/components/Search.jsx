@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const fetchData = async (username) => {
     try {
@@ -11,13 +11,18 @@ const fetchData = async (username) => {
     }
 };
 
-function Search({color}) {
-    const [githubData, setGithubData] = useState(null);
+function Search({color,data}) {
+    const [githubData, setGithubData] = data;
+
+
+    
+
 
     const handleSearch = async (e) => {
         e.preventDefault();
         const data = await fetchData(e.target.search.value);
         setGithubData(data);
+        console.log(data)
     };
 
     return (
@@ -35,6 +40,7 @@ function Search({color}) {
                     <p>Repositories: {githubData.public_repos}</p>
                 </div>
             )} */}
+
         </div>
     );
 }

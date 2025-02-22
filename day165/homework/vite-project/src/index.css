@@ -26,8 +26,8 @@
 }
 
 #parent {
-    width: 590px;
-    height: 65%;
+    width: 660px;
+    height: 75%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -57,7 +57,7 @@
 
 #search {
     background-color: #1f2a48;
-    height: 80px;
+    height: 100px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -74,7 +74,7 @@ form {
 
 }
 
-input{
+input {
     height: 100%;
     width: 223px;
     background: transparent;
@@ -85,16 +85,75 @@ input{
 }
 
 
-input::placeholder{
+input::placeholder {
     color: gray;
 }
 
-button{
+button {
     height: 75%;
     width: 100px;
     border-radius: 15px;
     border: none;
-    background-color:#0079fe ;
+    background-color: #0079fe;
     color: white;
     font-size: 1rem;
+}
+
+
+#octocat {
+    width: 100px;
+}
+
+
+
+
+#userInfo {
+    height: 100%;
+    background-color: #1f2a48;
+}
+
+#avatar {
+    width: 125px;
+    border-radius: 150px;
+}
+
+#info1 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: center;
+    gap: 60px;
+}
+
+#total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#userName {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+
+}
+
+#userName h2 {
+    color: #f1f1f3;
+}
+
+#userName h4 {
+    color: #acb0ba;
+    font-weight: 600;
+}
+
+#userName span {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#username span p{
+    color: #136ad7;
 }

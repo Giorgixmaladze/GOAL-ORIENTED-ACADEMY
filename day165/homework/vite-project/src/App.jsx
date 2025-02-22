@@ -9,6 +9,8 @@ import User from './components/User'
 function App() {
 
   const [togg, setToggle] = useState("#141c2f")
+  const [data,setData] = useState([])
+
 
   useEffect(() => {
     localStorage.setItem("color", togg)
@@ -38,8 +40,8 @@ function App() {
           </div>
 
         </div>
-        <Search color={togg}/>
-        <User color={togg}/>
+        <Search data={[data,setData]} color={togg}/>
+        <User data={[data,setData]} color={togg}/>
       </div>
 
     </div>
