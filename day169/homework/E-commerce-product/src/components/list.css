@@ -1,0 +1,15 @@
+.product {
+    width: 500px;
+    height: 700px;
+    border: 1px solid black;
+}
+
+.product img {
+    width: 35%;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
