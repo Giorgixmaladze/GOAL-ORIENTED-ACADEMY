@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react"
 import AuthProvider, { AuthContext } from "../context/Context"
 import "./list.css"
-import useCart from "../hooks/useCart"
+import { Link } from "react-router-dom"
 
 const ProductsList = () => {
 
@@ -19,6 +19,7 @@ const ProductsList = () => {
     return (
         <div id="container">
             <h1>Products List</h1>
+            <Link to='cart'>Cart</Link>
             {
                 products.map((product) => {
                     return (
