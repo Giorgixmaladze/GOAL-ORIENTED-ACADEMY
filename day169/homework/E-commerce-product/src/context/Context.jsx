@@ -2,7 +2,7 @@
 import { useState, createContext, useEffect } from "react";
 import { getLocal } from "../utils/localStorage";
 import useCart from "../hooks/useCart";
-import { preconnect } from "react-dom";
+
 
 export const AuthContext = createContext();
 
@@ -42,9 +42,7 @@ const AuthProvider = ({ children }) => {
     };
 
     const removeProduct = (product) => {
-
         return cart.filter(curValue => curValue.id !== product.id);
-       
     }
 
 
