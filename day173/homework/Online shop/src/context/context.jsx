@@ -1,10 +1,11 @@
-import { createContext, useEffect } from "react";
+import { createContext, useEffect, useState } from "react";
 import { getLocal, setLocal } from "../utils/localStorage";
 import { useNavigate } from "react-router-dom";
 
 export const AuthContext = createContext()
 
 const AuthProvider = ({children}) =>{
+    const [info,setInfo] = useState([])
     const curUser = getLocal("curUser") || []
     useEffect(() =>{
         setLocal("curUser",curUser)
@@ -23,8 +24,24 @@ const AuthProvider = ({children}) =>{
         }
     }
 
+
+    const fetchData = async () =>{
+        try{
+            const data = await fetch(`https://fakestoreapi.com/products`)
+            const res = await data.json()
+            setInfo(res)
+        }catch{
+            console.error("Error Fetching Data")
+        }
+    }
+
+    const removeProduct = (index) =>{
+        const updated = info.filter((_,i) => index !== i)
+        setInfo(updated)
+    }
+
     return(
-        <AuthContext.Provider value={{verify}}>
+        <AuthContext.Provider value={{verify,fetchData,info,removeProduct}}>
             {children}
         </AuthContext.Provider>
     )
