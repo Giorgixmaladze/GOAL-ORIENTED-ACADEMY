@@ -1,0 +1,50 @@
+
+// 1. **დააბრუნე ორჯერ დიდი რიცხვი**  
+//    - დაწერე ფუნქცია, რომელიც მიიღებს ერთ `number` ტიპის პარამეტრს და დააბრუნებს ამ რიცხვის ორჯერ მეტ მნიშვნელობას.
+
+
+function getNum(num:number):number{
+    return num*2
+}
+console.log(getNum(5))
+
+
+// 2. **სტრინგის მოკლე ვერსია**  
+//    - დაწერე ფუნქცია, რომელიც მიიღებს `string` ტიპის პარამეტრს და დააბრუნებს მხოლოდ პირველ 5 სიმბოლოს.  
+//    *(თუ სტრინგი 5-ზე ნაკლებია, დააბრუნე როგორც არის.)*
+
+
+
+function getString(st:string):string{
+    return st.slice(0,6)
+}
+
+
+console.log(getString("typescript"))
+
+// 3. **ამოწმებს რიცხვი ლუწია თუ კენტი**  
+//    - დაწერე ფუნქცია, რომელიც მიიღებს `number`-ს და დააბრუნებს `"ლუწია"` ან `"კენტია"` სტრინგს.
+
+
+function evenOrOdd(num:number):string{
+    if(num % 2 === 0){
+        return "Even"
+    }else{
+        return "Odd"
+    }
+}
+
+
+// 4. **ნულების მასივის გენერირება**  
+//    - დაწერე ფუნქცია, რომელიც მიიღებს `length: number` პარამეტრს და დააბრუნებს მასივს, რომელშიც მხოლოდ `0`-ებია ამ სიგრძით.
+
+
+function zeros(num:number):number[]{
+    let l:number[]=[]
+
+    for(let i = 0; i< num; i++){
+        l.push(0)
+    }
+    return l
+}
+console.log(zeros(9))
