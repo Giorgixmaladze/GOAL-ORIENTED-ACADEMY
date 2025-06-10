@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- შექმენით თამაშის რეგისტრაცია სადაც მომხმარებელი იორჩევს პერსონაჟის სახელს გამოიოყენეთ enum + მომხმარებელმა უნდა აირჩიოს როლი (ადმინი, მოდერატორი ან მოთამაშე), აგრეთვე შემოაქვს username და password
+ -->
+
+
+    <form action="">
+        <select name="player" id="player" required>
+            <option value="Luka">Main</option>
+            <option value="Lile">Side</option>
+            <option value="Nia">Antagonist</option>
+        </select>
+        <select name="role" id="role" required>
+            <option value="admin">Admin</option>
+            <option value="moderator">Moderator</option>
+            <option value="player">Player</option>
+        </select>
+        <input type="text" name="username" required placeholder="Enter the username...">
+        <input type="password" name="pass" required placeholder="Enter the password...">
+        <button>Submit</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
