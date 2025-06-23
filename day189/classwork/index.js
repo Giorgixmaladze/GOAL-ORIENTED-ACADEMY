@@ -1,11 +1,17 @@
-
-import fs from 'fs';
-
-
-fs.writeFileSync('cw.txt', "hello");
+import fs from "fs"
 
 
-const data = fs.readFileSync('cw.txt', 'utf-8');
+// //fs means file system
 
+// const file = fs.readFileSync("./test/text.txt","utf8")
+// console.log(file)
 
-console.log(data);
+// fs.mkdirSync("./nika") --> creates folder
+
+// const data = `I love goa`
+// setTimeout(() =>{
+//     fs.writeFileSync("./nika/index.js",JSON.stringify(data))
+// },1000)
+
+const dir = fs.readdirSync("../")
+console.log(dir)
