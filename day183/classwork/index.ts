@@ -23,40 +23,44 @@
 // 1) შექმენით პირველრიგში ობიექტის ტიპი, სახელად carType, ობიექტში უნდა იყოს 4 კუთვნილება, ბრენდი, მოდელი გამოშვების წელი და id რომელიც შესაძლოა იყოს სტრინგიც და რიცხვიც. შემდეგ შექმენით ფუნქციის ტიპი რომელსაც გადაეცემა 4 მნიშვნელობა და უნდა დააბრუნოს carType თიპის მიხედვტ შექმნილი ობიექტი, ფუნქციაში გამოიყენეთ type guard შეამოწმეთ id არის თუ არა სტრინგი, თუ არის გააადითედ და ისე შეინახეთ ობიექტში, თუ რიცხვი მაშ ჩვეულბრივად შეინახეთ.
 
 
-type carType ={
-    brand:string,
-    model:string,
-    year:string | number,
-    id:string | number
-}
+// type carType ={
+//     brand:string,
+//     model:string,
+//     year:string | number,
+//     id:string | number
+// }
 
 
-type funcType = (brand:string,model:string,year:string | number, id:number | string) => carType
+// type funcType = (brand:string,model:string,year:string | number, id:number | string) => carType
 
 
-const func:funcType = function(brand,model,year,id){
+// const func:funcType = function(brand,model,year,id){
 
-    if(typeof id === "string"){
-        id = id.toUpperCase()
-    }
-
-
-    const car:carType = {
-        brand,
-        model,
-        year,id
-    }
+//     if(typeof id === "string"){
+//         id = id.toUpperCase()
+//     }
 
 
-    return car
-}
+//     const car:carType = {
+//         brand,
+//         model,
+//         year,id
+//     }
 
-console.log(func("Audi","rs4",2007,13214))
+
+//     return car
+// }
+
+// console.log(func("Audi","rs4",2007,13214))
 
 
 
-const reValue = (isTrue: boolean) =>{
-    if(isTrue) return 10
-    return func("Audi","rs4",2007,13214)
-}
+// const reValue = (isTrue: boolean) =>{
+//     if(isTrue) return 10
+//     return func("Audi","rs4",2007,13214)
+// }
 
+
+
+
+const date:(number|string|boolean)[] = ["2025-12-4",23534645456]
