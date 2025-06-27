@@ -62,5 +62,18 @@
 
 
 
+// const date: number | string = "dfhdhdfghf"
+// date.toLowerCase();
 
-const date:(number|string|boolean)[] = ["2025-12-4",23534645456]
+
+// type Color = "yellow" | "red" | 10
+
+// function myFunc(color:Color){
+//     console.log(color)
+// }
+
+// myFunc(10)
+
+
+
+const number: string = 5
